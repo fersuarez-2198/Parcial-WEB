@@ -1,56 +1,12 @@
 <router-outlet>
-    <div class="formulario">
-
-        <div class="navBar">
-            <ul>
-                <li><a (click)="home()" href="#home">Home</a></li>
-                <li><a (click)="services()" href="#news">Services</a></li>
-                <li><a (click)="about()" href="#about">About</a></li>
-                <li><a (click)="contact()" href="#contact">Contact</a></li>
-                <li><a (click)="FAQ()" href="#faq">FAQ</a></li>
-
-                <form class="example" action="action_page.php">
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="input" class="primary-button">SIGN UP</button>
-                </form>
-
-            </ul>
-        </div>
-        <div class="redesSociales">
-            <a href="http://www.facebook.com">FB</a>
-            <br>
-            <a href="http://www.twitter.com">TW</a>
-        </div>
-        <div class="info-text" *ngIf="isHome">
-            <h2>TRAVEL</h2>
-            <h1>The World</h1>
-            <h3>Landing Page</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea </p>
-            <button type="input" class="secondary-button">LEARN MORE</button>
-        </div>
-
-
-        <div class="info-text" *ngIf="isServices">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea </p>
-        </div>
-        <div class="info-text" *ngIf="isAbout">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea </p>
-            <button type="button" class="secondary-button">isAbout</button>
-        </div>
-        <div class="info-text" *ngIf="isContact">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea </p>
-            <button type="button" class="primary-button">isContact</button>
-        </div>
-        <div class="info-text" *ngIf="isFAQ">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea </p>
-            <button type="button" class="secondary-button">isFAQ</button>
-        </div>
-
+    <div *ngIf="isPrimero">
+        <app-primero></app-primero>
+    </div>
+    <div *ngIf="isSegundo">
+        <app-segundo></app-segundo>
     </div>
 
+    <button class="primary-button" (click)="showPrimero()"> PRIMERO</button>
+    <button class="primary-button" (click)="showSegundo()"> SEGUNDO</button>
+    
 </router-outlet>

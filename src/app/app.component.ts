@@ -7,46 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Parcial';
-  isHome = true;
-  isServices = false;
-  isAbout = false;
-  isContact = false;
-  isFAQ = false;
+  isPrimero: boolean = false;
+  isSegundo: boolean = true;
 
 
-  home() {
-    this.isHome = true;
-    this.isServices = false;
-    this.isAbout = false;
-    this.isContact = false;
-    this.isFAQ = false;
+  showPrimero(){
+    this.isPrimero = true;
+    this.isSegundo = false;
+ 
   }
-  services() {
-    this.isHome = false;
-    this.isServices = true;
-    this.isAbout = false;
-    this.isContact = false;
-    this.isFAQ = false;
-  }
-  about() {
-    this.isHome = false;
-    this.isServices = false;
-    this.isAbout = true;
-    this.isContact = false;
-    this.isFAQ = false;
-  }
-  contact() {
-    this.isHome = false;
-    this.isServices = false;
-    this.isAbout = false;
-    this.isContact = true;
-    this.isFAQ = false;
-  }
-  FAQ() {
-    this.isHome = false;
-    this.isServices = false;
-    this.isAbout = false;
-    this.isContact = false;
-    this.isFAQ = true;
+
+  showSegundo(){
+    this.isPrimero = false;
+    this.isSegundo = true;
+ 
   }
 }

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'info-icon';
+    src:  url('../../../src/resources/fonts/info-icon.eot?1rhczk');
+    src:  url('../../../src/resources/fonts/info-icon.eot?1rhczk#iefix') format('embedded-opentype'),
+    url('../../../src/resources/fonts/info-icon.ttf?1rhczk') format('truetype'),
+    url('../../../src/resources/fonts/info-icon.woff?1rhczk') format('woff'),
+    url('../../../src/resources/fonts/info-icon.svg?1rhczk#info-icon') format('svg');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../../src/resources/fonts/icomoon.eot?2q02vd');
+    src:  url('../../../src/resources/fonts/icomoon.eot?2q02vd#iefix') format('embedded-opentype'),
+      url('../../../src/resources/fonts/icomoon.ttf?2q02vd') format('truetype'),
+      url('../../../src/resources/fonts/icomoon.woff?2q02vd') format('woff'),
+      url('../../../src/resources/fonts/icomoon.svg?2q02vd#icomoon') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src:  url('../../../src/resources/fonts/OpenSans-Bold.ttf');
+    src:  url('../../../src/resources/fonts/OpenSans-BoldItalic.ttf') format('embedded-opentype'),
+      url('../../../src/resources/fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+      url('../../../src/resources/fonts/OpenSans-ExtraBoldItalic.ttf') format('woff'),
+      url('../../../src/resources/fonts/OpenSans-Italic.ttf') format('svg'),
+      url('../../../src/resources/fonts/OpenSans-Light.ttf') format('svg'),
+      url('../../../src/resources/fonts/OpenSans-LightItalic.ttf') format('svg');
+
+   
+}
+
+@font-face {
+    font-family: 'lupa';
+    src:  url('../../../src/resources/fonts/lupa.eot?m8ssmz');
+    src:  url('../../../src/resources/fonts/lupa.eot?m8ssmz#iefix') format('embedded-opentype'),
+      url('../../../src/resources/fonts/lupa.ttf?m8ssmz') format('truetype'),
+      url('../../../src/resources/fonts/lupa.woff?m8ssmz') format('woff'),
+      url('../../../src/resources/fonts/lupa.svg?m8ssmz#lupa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+
+.form-two {
+    width: 615px;
+    height: 349px;
+    margin: auto;
+    background-image: url(../../resources/wallpaper-2.png);
+    background-size: 615px 349px;
+    background-repeat: no-repeat;
+}
+
+.info-iconfacebook:before {
+    content: "\ea90";
+}
+
+.info-iconinstagram:before {
+    content: "\ea92";
+}
+
+.info-icontwitter:before {
+    content: "\ea96";
+}
+
+.icon-lupasearch:before {
+    content: "\e986";
+}  
+
+:root {
+    --blueFont: #003263;
+    --whiteFont: #FFFFFF;
+    --yellowFont: #FFB700;
+    --pinkFont: #F194AB;
+    --prueba: gray;
+}
+
+::placeholder {
+    color: var(--whiteFont);
+    font-family: Montserrat-Italic;
+}
+
+input[type="text"] {
+    background-color: transparent ;
+    font-size: 9px;
+    margin-left: 25px;
+    margin-top: 6px;
+    color: var(--whiteFont);
+    box-sizing: border-box;
+    text-align: end;
+    border-bottom: 1px solid white; 
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    overflow: hidden;
+    font-family: Montserrat-ExtraBold;
+}
+
+h1{
+    font-family: OpenSans;
+    color: var(--pinkFont);
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2{
+    font-family: OpenSans;
+    color: var(--pinkTwoFont);
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+p{
+    font-family: OpenSans;
+    color: var(--pinkTwoFont);
+    width: 50%;
+    font-size: 10px;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+
+[class^="info-icon"], [class*=" info-icon"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'info-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-lupa"], [class*=" icon-lupa"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'lupa' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.info-iconfacebook:before {
+    content: "\ea90";
+}
+
+.info-iconinstagram:before {
+    content: "\ea92";
+}
+
+.info-icontwitter:before {
+    content: "\ea96";
+}
+
+.info-iconyoutube:before {
+    content: "\ea9d";
+}
+
+.icon-icon-info:before {
+    content: "\e900";
+    color: #787477;
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.navBar {
+    margin-top: -10px;
+    background-color: black;
+    opacity: 0.5;
+
+}
+.redes{
+    font-size: 7px;
+    margin: 10px 4px 4px 4px;
+    border-radius: 50% ;
+    border-color: transparent;
+    width: 15px;
+    height: 14px;
+    padding: 2px 2px 1px 2px;
+    text-align: center;
+}
+.lupa{
+    color: var(--whiteFont);
+    background-color: transparent;
+    font-size: 7px;
+    margin: 10px 4px 4px -6px;
+    border-radius: 50% ;
+    border-color: transparent;
+    width: 15px;
+    height: 14px;
+    padding: 2px 2px 1px 2px;
+    text-align: center;
+}
+.texto{
+    margin: 35px 0 0 45px;
+}
+#icecream {
+    width: 200px;
+    height: 125px;
+    background-image: url(../../resources/icecream-logo.png) ;
+    background-repeat: round;
+    background-color: transparent;
+    border-color: transparent;
+}

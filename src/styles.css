@@ -1,70 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'info-icon';
+    src:  url('../src/resources/fonts/info-icon.eot');
+    src:  url('../src/resources/fonts/info-icon.eot?1rhczk#iefix') format('embedded-opentype')
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../src/resources/fonts/Montserrat-ExtraBoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Extrabold';
+    src: url('../src/resources/fonts/Montserrat-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../src/resources/fonts/Montserrat-Italic.otf');
+}
 
 :root {
     --blueFont: #003263;
     --whiteFont: #FFFFFF;
     --yellowFont: #FFB700;
+    --pinkFont: #F194AB;
+    --pinkTwoFont: #fecfdd;
     --prueba: gray;
 }
 
-::placeholder {
-    color: var(--blueFont);
-    font-family: Montserrat;
-}
-
-a {
-    color: var(--whiteFont);
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 72px;
-    color: var(--yellowFont);
-    font-family: Qwigley;
-    margin-left: 10px;
-    margin-top: -15px;
-    margin-bottom: 0;
-    text-shadow: 2px 2px #4e4545;
-}
-
-h2 {
-    font-size: 30px;
-    color: var(--whiteFont);
-    font-family: Montserrat ExtraBold;
-    font-style: italic;
-    margin-bottom: 0;
-    margin-top: 40px;
-    text-shadow: 2px 2px #4e4545;
-}
-
-h3 {
-    font-size: 16px;
-    color: var(--whiteFont);
-    font-family: Montserrat;
-    font-style: italic;
-    margin-bottom: 10px;
-    margin-top: -5px;
-    text-shadow: 2px 2px #4e4545;
-}
-
-p {
-    font-size: 6px;
-    color: var(--whiteFont);
-    font-family: Montserrat;
-    font-style: italic;
-    margin-bottom: 15px;
-    width: 40%;
-    margin-top: 40px;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 10px;
-    padding: 0;
-    overflow: hidden;
-    font-family: Montserrat ExtraBold;
-    padding-top: 15px;
-}
 
 li {
     float: left;
@@ -87,50 +51,14 @@ input {
     outline: none;
 }
 
-input[type="text"] {
-    font-size: 9px;
-    margin-top: 6px;
-    border-radius: 20px;
-    color: var(--blueFont);
+
+
+button:focus {
+    outline:0;
 }
-
-.formulario {
-    width: 615px;
-    height: 400px;
-    margin: auto;
-    background-image: url(./resources/wallpaper.png);
-    background-size: 615px 400px;
-    background-repeat: no-repeat;
-}
-
-
-/* Buscador */
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 9px;
-    border: 1px solid transparent;
-    float: left;
-    background: #f1f1f1;
-    text-align: right;
-    width: 162px;
-    height: 0px;
-}
-
-form.example input[type=text]:focus {
-    box-shadow: none;
-    border-color: transparent;
-}
-
-.navBar {
-    margin-top: -10px;
-}
-
-
-/* Fin buscador */
 
 .primary-button {
-    font-family: Montserrat;
+    font-family: Montserrat-Italic;
     font-size: 9px;
     background: var(--blueFont);
     color: var(--whiteFont);
@@ -139,30 +67,4 @@ form.example input[type=text]:focus {
     margin-top: 5px;
     margin-left: 40px;
     border: var(--blueFont);
-}
-
-.secondary-button {
-    font-family: Montserrat;
-    font-size: 9px;
-    background: var(--yellowFont);
-    color: var(--whiteFont);
-    border-radius: 20px;
-    height: 23px;
-    border: var(--yellowFont);
-}
-
-.info-text {
-    margin-left: 25px;
-    margin-top: -240px;
-}
-
-.redesSociales {
-    background-color: var(--blueFont);
-    width: 28px;
-    height: 106px;
-    margin-left: auto;
-    margin-top: 110px;
-    color: var(--whiteFont);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
